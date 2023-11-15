@@ -1,0 +1,49 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Add a background color for the body */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd; /* Cell background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Font size for X and O */
+    cursor: pointer;
+}
+
+.win-page {
+    text-align: center;
+    display: none; /* Hide the win page initially */
+}
+
+.win-page div {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#restartButton {
+    font-size: 16px;
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
