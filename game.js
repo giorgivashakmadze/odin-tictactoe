@@ -1,4 +1,3 @@
-// Add this to your game.js file
 const board = document.getElementById('board');
 const cells = document.querySelectorAll('.cell');
 const winPage = document.querySelector('.win-page');
